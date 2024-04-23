@@ -1,2 +1,3 @@
 [workspace]
+resolver = "2"
 members = ["ch4_1_tee", "ch4_2_cp"]

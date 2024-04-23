@@ -7,7 +7,7 @@ const BUF_SIZE: usize = 1024;
 fn main() {
     let args = command!()
         .arg(arg!(<NAME>).required(true))
-        .arg(arg!(--append))
+        .arg(arg!(-a --append))
         .get_matches();
     let name = args.get_one::<String>("NAME").unwrap();
     let append = args.get_one::<bool>("append").unwrap();
